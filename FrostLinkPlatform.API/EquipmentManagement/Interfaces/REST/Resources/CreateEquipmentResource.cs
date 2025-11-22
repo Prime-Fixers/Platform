@@ -26,5 +26,6 @@ public record CreateEquipmentResource(
     int OwnerId,
     string OwnerType,
     string OwnershipType,
-    string Notes
+    string Notes,
+    string? ImageUrl = null
 );

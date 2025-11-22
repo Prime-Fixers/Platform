@@ -33,6 +33,7 @@ public partial class Equipment
     public EOwnershipType OwnershipType { get; private set; }
     public Entities.RentalInfo? RentalInfo { get; private set; }
     public string Notes { get; private set; }
+    public string? ImageUrl { get; private set; }
 
     protected Equipment()
     {
@@ -51,6 +52,7 @@ public partial class Equipment
         OwnerType = string.Empty;
         OwnershipType = EOwnershipType.Owned;
         Notes = string.Empty;
+        ImageUrl = null;
     }
 
     public Equipment(CreateEquipmentCommand command) : this()
@@ -76,5 +78,6 @@ public partial class Equipment
         OwnerType = command.OwnerType;
         OwnershipType = Enum.Parse<EOwnershipType>(command.OwnershipType, true);
         Notes = command.Notes;
+        ImageUrl = command.ImageUrl;
     }
 }

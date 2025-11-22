@@ -37,7 +37,8 @@ public static class EquipmentResourceFromEntityAssembler
             entity.OwnerId,
             entity.OwnerType,
             entity.OwnershipType.ToString(),
-            entity.Notes
+            entity.Notes,
+            entity.ImageUrl
         );
     }
 }

@@ -285,8 +285,8 @@ if (isProduction)
 }
 else
 {
-    Console.WriteLine($"📍 Swagger: http://localhost:5000/swagger");
-    Console.WriteLine($"📍 Equipment API: http://localhost:5000/api/v1/equipments");
+    Console.WriteLine($"📍 Swagger: http://localhost:5128/swagger");
+    Console.WriteLine($"📍 Equipment API: http://localhost:5128/api/v1/equipments");
 }
 
 app.Run();

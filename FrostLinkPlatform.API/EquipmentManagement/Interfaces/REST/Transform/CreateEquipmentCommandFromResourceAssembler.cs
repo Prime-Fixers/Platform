@@ -33,7 +33,8 @@ public static class CreateEquipmentCommandFromResourceAssembler
             resource.OwnerId,
             resource.OwnerType,
             resource.OwnershipType,
-            resource.Notes
+            resource.Notes,
+            resource.ImageUrl
         );
     }
 }

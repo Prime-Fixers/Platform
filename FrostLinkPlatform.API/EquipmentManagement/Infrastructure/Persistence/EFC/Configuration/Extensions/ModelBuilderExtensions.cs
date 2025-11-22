@@ -34,6 +34,7 @@ public static class ModelBuilderExtensions
             entity.Property(e => e.TechnicalDetails).HasMaxLength(2000);
             entity.Property(e => e.OwnerType).IsRequired().HasMaxLength(50);
             entity.Property(e => e.Notes).HasMaxLength(1000);
+            entity.Property(e => e.ImageUrl).HasMaxLength(500).IsRequired(false);
 
             // Enum Properties
             entity.Property(e => e.Type).IsRequired().HasConversion<string>();
